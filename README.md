@@ -54,36 +54,6 @@ This project provides a practical, concrete example of a zero-JavaScript anonymo
 
 ---
 
-## Architecture
-
-```
-onionguard-filehost-template/
-├── cmd/
-│   └── server/
-│       ├── main.go             # Entry point: OnionGuard initialization, routes, graceful shutdown
-│       └── server_test.go      # End-to-end integration tests (OnionGuard + file host)
-├── internal/
-│   ├── config/
-│   │   └── config.go           # Configuration via environment variables
-│   ├── model/
-│   │   └── file.go             # FileMetadata domain model
-│   ├── storage/
-│   │   ├── storage.go          # Disk storage, JSON index, and janitor lifecycle
-│   │   └── storage_test.go     # Unit tests for storage engine
-│   ├── handler/
-│   │   ├── handlers.go         # HTTP handlers (Upload, Download, View, Delete, Health)
-│   │   └── handlers_test.go    # Handler unit tests and Zero-JS validation
-│   └── views/
-│       └── templates.go        # Zero-JS HTML views and OnionGuard hooks (WaitRoom, Challenge)
-├── data/
-│   └── uploads/                # Local file storage directory
-├── Makefile                    # Build, test, run, and tor setup targets
-├── go.mod
-└── go.sum
-```
-
----
-
 ## Quick Start
 
 ### Prerequisites
