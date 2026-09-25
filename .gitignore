@@ -1,0 +1,13 @@
+# Binaries
+bin/
+*.exe
+*.test
+
+# Data & Uploads
+data/uploads/*
+!data/uploads/.gitkeep
+data/meta.json*
+
+# Logs and environment
+*.log
+.env
