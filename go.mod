@@ -2,7 +2,7 @@ module onionguard-filehost
 
 go 1.24.0
 
-require github.com/ihatemyfcklife/onionguard v1.0.6
+require github.com/ihatemyfcklife/onionguard v1.1.0
 
 require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
